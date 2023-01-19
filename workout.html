@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="output"></div>
+
+<!-- 
+    <div class="wrapper">
+        <p>Content goes here</p>
+        <div class="content">
+            <button class="fa fa-trash"></button>
+        </div>
+        <div>
+            <div class="userChoice">
+            <textarea></textarea>
+        </div>
+        </div>
+    </div>
+-->
+
+<div class="adding" onclick="showMenu()">
+    <p>Add your day</p>
+    <button class="fa fa-add"></button>
+</div>
+
+<div class="inputSection">
+    <form novalidate>
+        <input type="text" placeholder="Which day to train" id="userInput" autocomplete="off" required>
+        <button onclick="setup()" class="fa fa-add"></button>
+    </form>
+    <button class="fa fa-close" onclick="closing()"></button>
+</div>
+
+<script>
+    function change(){
+        document.body.classList.toggle('open'); 
+    }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
